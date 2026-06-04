@@ -1,0 +1,9 @@
+CREATE TABLE contact(
+id INTEGER PRIMARY KEY,
+title TEXT NOT NULL,
+author TEXT NOT NULL,
+genre TEXT,
+price REAL DEFAULT 0.0,
+stock INTEGER DEFAULT 0,
+published_year INTEGER
+);
