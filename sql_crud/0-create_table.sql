@@ -1,9 +1,9 @@
-CREATE TABLE contact(
+CREATE TABLE books (
 id INTEGER PRIMARY KEY,
 title TEXT NOT NULL,
 author TEXT NOT NULL,
-genre TEXT,
-price REAL DEFAULT 0.0,
-stock INTEGER DEFAULT 0,
-published_year INTEGER
+genre TEXT NOT NULL,
+price REAL NOT NULL,
+stock INTEGER NOT NULL,
+published_year INTEGER NOT NULL
 );
