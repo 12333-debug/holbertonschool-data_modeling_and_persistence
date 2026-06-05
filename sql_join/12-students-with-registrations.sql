@@ -1,0 +1,7 @@
+SELECT DISTINCT students.name student_name
+FROM students
+WHERE students.id IN (
+SELECT student_id
+FROM registrations
+)
+ORDER BY student_name ASC;
